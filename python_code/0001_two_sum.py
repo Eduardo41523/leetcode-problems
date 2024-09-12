@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/two-sum/description/
 
 # Solved: 12/09/2024
-# Runtime Beats: %39.43
-# Memory Beats: %75.71
+# Runtime Beats: 39.43%
+# Memory Beats: 75.71%
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:

@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/add-two-numbers/description/
 
 # Solved: 12/09/2024
-# Runtime Beats: %5.46
-# Memory Beats: %74.75
+# Runtime Beats: 5.46%
+# Memory Beats: 74.75%
 
 # Definition for singly-linked list.
 class ListNode:
