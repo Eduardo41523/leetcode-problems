@@ -6,7 +6,7 @@
 
 class Solution:
     def intToRoman(self, num: int) -> str:
-        def digitToRoman(unit, five, ten):
+        def digitToRoman(char, unit, five, ten):
             if char in "0":
                 output = ""
             if char in "123":
@@ -19,23 +19,21 @@ class Solution:
                 output = five + unit * (int(char)-5)
             elif char in "9":
                 output = unit + ten
-            return output[::-1]
+            return output
 
         output = []
         num = str(num)
-        for j in range(len(num)):
-            i = j + 1
+        for i in range(1, len(num)+1):
             char = num[-i]
             if i == 1:
-                output += digitToRoman("I", "V", "X")
+                output.append(digitToRoman(char, "I", "V", "X"))
             if i == 2:
-                output += digitToRoman("X", "L", "C")
+                output.append(digitToRoman(char, "X", "L", "C"))
             if i == 3:
-                output += digitToRoman("C", "D", "M")
+                output.append(digitToRoman(char, "C", "D", "M"))
             if i == 4:
                 # The constraints of the problem make it so that "?" will never occur
-                output += digitToRoman("M", "?", "?") 
-
+                output.append(digitToRoman(char, "M", "?", "?"))
         output = output[::-1]
         output = "".join(output)
 
