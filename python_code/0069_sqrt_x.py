@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/sqrtx/description/
 
-# Solved: 13/09/2024
-# Runtime Beats: 46.90%
-# Memory Beats: 19.45%
+# Solved: 18/09/2024
+# Runtime Beats: 17.59%
+# Memory Beats: 19.51%
 
 class Solution:
     def mySqrt(self, x: int) -> int:
