@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/reverse-integer/description/
-# 
 
 # Solved: 13/09/2024
 # Runtime Beats: 59.44%
